@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b63">
+  <meta name="description" content="यादव इंटरप्राइजेज, जयरामपट्टी — मोरंग, बालू, सीमेंट और सरिया के लिए संपर्क करें।">
+  <title>यादव इंटरप्राइजेज | निर्माण सामग्री, जयरामपट्टी</title>
+  <style>
+    :root{--navy:#071b63;--blue:#123a9b;--red:#e31b23;--yellow:#ffd51b;--ink:#18213a;--muted:#65708a;--paper:#f5f7fc}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari","Mangal",Arial,sans-serif;color:var(--ink);background:var(--paper)}
+    a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}
+    .top{background:var(--navy);color:#fff;padding:9px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+    header{background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 16px #071b6318}
+    .nav{max-width:1150px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;color:var(--navy);font-size:20px}
+    .logo{width:45px;height:45px;border-radius:13px;background:var(--red);color:#fff;display:grid;place-items:center;font-size:25px}
+    .links{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px}.links a:hover{color:var(--red)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:0;border-radius:12px;background:var(--red);color:#fff;font-weight:800;cursor:pointer;box-shadow:0 6px 16px #e31b2330}
+    .btn.blue{background:var(--navy)}.btn.yellow{background:var(--yellow);color:#171717}
+    .hero{background:linear-gradient(120deg,#061650 0%,#123a9b 60%,#1c58b9 100%);color:#fff;overflow:hidden}
+    .hero-inner{max-width:1150px;margin:auto;padding:55px 20px 48px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:34px}
+    .tag{display:inline-block;background:var(--yellow);color:#161616;border-radius:30px;padding:7px 14px;font-weight:900;font-size:14px}
+    h1{font-size:clamp(36px,5vw,62px);line-height:1.12;margin:17px 0 12px;font-weight:950}
+    .hero p{font-size:18px;line-height:1.7;color:#e5ecff;margin:0 0 22px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .poster{width:100%;max-height:390px;object-fit:cover;object-position:center;border:5px solid #fff;border-radius:20px;box-shadow:0 18px 45px #0005}
+    .trust{background:#fff;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;max-width:1050px;margin:-1px auto 0;box-shadow:0 8px 30px #0b1d4b12;border-radius:0 0 18px 18px;overflow:hidden}
+    .trust div{text-align:center;padding:18px 10px;font-weight:800;color:var(--navy)}.trust strong{display:block;color:var(--red);font-size:24px}
+    section{max-width:1150px;margin:auto;padding:64px 20px}.eyebrow{color:var(--red);font-weight:900;text-transform:uppercase;letter-spacing:1px;font-size:13px}
+    h2{font-size:clamp(27px,3vw,38px);margin:8px 0 12px;color:var(--navy)}.intro{color:var(--muted);line-height:1.7;max-width:700px;margin:0 0 28px}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:#fff;border:1px solid #e8ecf5;border-radius:17px;padding:22px;box-shadow:0 7px 22px #0b1d4b08}
+    .product-icon{width:54px;height:54px;border-radius:15px;background:#fff1c2;display:grid;place-items:center;font-size:29px;margin-bottom:14px}
+    .card h3{margin:0 0 7px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+    .card .small-link{display:inline-block;color:var(--red);font-weight:900;margin-top:15px;font-size:14px}
+    .why{background:#fff;border-radius:22px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .why-item{display:flex;gap:12px;align-items:flex-start}.check{flex:0 0 30px;width:30px;height:30px;background:#e8f8ef;color:#078a47;border-radius:50%;display:grid;place-items:center;font-weight:900}
+    .why-item b{display:block;color:var(--navy);margin-bottom:3px}.why-item span{color:var(--muted);font-size:14px;line-height:1.5}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}
+    .contact-card{background:var(--navy);color:#fff;border-radius:20px;padding:28px}
+    .contact-card h2{color:#fff}.contact-line{padding:14px 0;border-bottom:1px solid #ffffff2b;line-height:1.6}.contact-line:last-child{border:0}
+    form{background:#fff;border:1px solid #e8ecf5;border-radius:20px;padding:25px;box-shadow:0 8px 25px #0b1d4b0b}
+    label{display:block;font-weight:800;color:var(--navy);font-size:14px;margin:12px 0 6px}
+    input,textarea,select{width:100%;border:1px solid #d8deeb;border-radius:10px;padding:12px;background:#fff;outline:none}
+    input:focus,textarea:focus,select:focus{border-color:#315ac0;box-shadow:0 0 0 3px #315ac01a}
+    textarea{min-height:95px;resize:vertical}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .note{font-size:12px;color:var(--muted);line-height:1.5;margin-top:10px}
+    footer{background:#061447;color:#dce5ff;padding:24px 20px;text-align:center;font-size:13px}
+    .float-wa{position:fixed;right:18px;bottom:18px;z-index:8;background:#18a957;color:#fff;border-radius:50px;padding:14px 18px;font-weight:900;box-shadow:0 8px 24px #0003}
+    @media(max-width:800px){.hero-inner{grid-template-columns:1fr;padding-top:38px}.poster{max-height:300px}.cards{grid-template-columns:repeat(2,1fr)}.trust{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.links{display:none}}
+    @media(max-width:480px){.cards{grid-template-columns:1fr 1fr;gap:10px}.card{padding:15px}.card h3{font-size:16px}.card p{font-size:12px}.form-row{grid-template-columns:1fr}.hero p{font-size:16px}.top{justify-content:center;text-align:center}}
+  </style>
+</head>
+<body>
+  <div class="top"><span>📍 काली रोड, जयरामपट्टी</span><span>📞 <a href="tel:9005586366">9005586366</a></span></div>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="#home"><span class="logo">य</span><span>यादव इंटरप्राइजेज<small style="display:block;font-size:11px;color:#68728b">निर्माण सामग्री विक्रेता</small></span></a>
+      <div class="links"><a href="#home">होम</a><a href="#products">सामान</a><a href="#about">हमारे बारे में</a><a href="#contact">संपर्क</a></div>
+      <a class="btn" href="https://wa.me/919005586366?text=नमस्ते%20यादव%20इंटरप्राइजेज%2C%20मुझे%20निर्माण%20सामग्री%20की%20जानकारी%20चाहिए।">WhatsApp करें</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <span class="tag">मजबूत निर्माण… हमारी पहचान…</span>
+          <h1>आपके सपनों के घर के लिए <span style="color:#ffdf27">मजबूत</span> सामग्री</h1>
+          <p>मोरंग, बालू, सीमेंट और सरिया के लिए संपर्क करें। सही जानकारी, उचित दाम और भरोसेमंद सेवा — यादव इंटरप्राइजेज, जयरामपट्टी।</p>
+          <div class="hero-actions">
+            <a class="btn yellow" href="#enquiry">ऑनलाइन पूछताछ करें</a>
+            <a class="btn" href="tel:9005586366">📞 अभी कॉल करें</a>
+          </div>
+        </div>
+        <img class="poster" src="assets/shop-poster.png" alt="यादव इंटरप्राइजेज का दुकान पोस्टर">
+      </div>
+    </div>
+
+    <div class="trust">
+      <div><strong>4+</strong>मुख्य उत्पाद श्रेणियाँ</div>
+      <div><strong>📍</strong>जयरामपट्टी</div>
+      <div><strong>📞</strong>सीधा संपर्क</div>
+      <div><strong>🤝</strong>ग्राहक सेवा</div>
+    </div>
+
+    <section id="products">
+      <span class="eyebrow">हमारे उत्पाद</span>
+      <h2>निर्माण के लिए जरूरी सामग्री</h2>
+      <p class="intro">अपनी जरूरत का सामान चुनें और WhatsApp पर मात्रा तथा उपलब्धता की जानकारी पूछें। कीमतें ऑर्डर और मात्रा के अनुसार दुकान से कन्फर्म करें।</p>
+      <div class="cards">
+        <article class="card"><div class="product-icon">🏖️</div><h3>मोरंग</h3><p>निर्माण कार्य के लिए मोरंग की जानकारी और उपलब्धता पूछें।</p><a class="small-link" href="#enquiry" data-product="मोरंग">मोरंग पूछें →</a></article>
+        <article class="card"><div class="product-icon">🪣</div><h3>बालू</h3><p>अपनी जरूरत के अनुसार बालू की मात्रा और रेट पूछें।</p><a class="small-link" href="#enquiry" data-product="बालू">बालू पूछें →</a></article>
+        <article class="card"><div class="product-icon">🧱</div><h3>सीमेंट</h3><p>सीमेंट के ब्रांड, बोरी की संख्या और आज का भाव पूछें।</p><a class="small-link" href="#enquiry" data-product="सीमेंट">सीमेंट पूछें →</a></article>
+        <article class="card"><div class="product-icon">🏗️</div><h3>सरिया</h3><p>सरिया के साइज, वजन और उपलब्धता के बारे में पूछें।</p><a class="small-link" href="#enquiry" data-product="सरिया">सरिया पूछें →</a></article>
+      </div>
+    </section>
+
+    <section id="about" style="padding-top:10px">
+      <div class="why">
+        <div><span class="eyebrow">क्यों चुनें हमें</span><h2>भरोसे के साथ निर्माण की शुरुआत</h2><p class="intro" style="margin-bottom:0">आपकी निर्माण जरूरतों के लिए सीधे दुकान से बात करें। ऑर्डर से पहले रेट, ब्रांड, मात्रा और डिलीवरी की जानकारी कन्फर्म की जा सकती है।</p></div>
+        <div style="display:grid;gap:18px;align-content:center">
+          <div class="why-item"><div class="check">✓</div><div><b>सीधा दुकानदार से संपर्क</b><span>फोन या WhatsApp पर अपनी जरूरत बताएं।</span></div></div>
+          <div class="why-item"><div class="check">✓</div><div><b>कई निर्माण सामग्री</b><span>मोरंग, बालू, सीमेंट और सरिया के लिए एक जगह संपर्क।</span></div></div>
+          <div class="why-item"><div class="check">✓</div><div><b>ऑर्डर से पहले जानकारी</b><span>दाम और उपलब्धता दुकान से कन्फर्म करें।</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <span class="eyebrow">हमसे जुड़ें</span><h2>संपर्क और दुकान का पता</h2>
+      <p class="intro">कॉल करें या नीचे फॉर्म भरकर WhatsApp पर अपनी पूछताछ भेजें।</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2>यादव इंटरप्राइजेज</h2>
+          <div class="contact-line">👤 <b>प्रो. रामसिंह यादव (मालिक)</b></div>
+          <div class="contact-line">📍 काली रोड, जयरामपट्टी</div>
+          <div class="contact-line">📞 <a href="tel:9005586366">9005586366</a></div>
+          <div class="contact-line">🕒 दुकान के समय और उपलब्धता के लिए फोन करें।</div>
+          <a class="btn yellow" style="margin-top:18px" href="https://wa.me/919005586366">WhatsApp पर बात करें</a>
+        </div>
+        <form id="enquiry">
+          <h3 style="margin:0;color:var(--navy);font-size:22px">ऑनलाइन पूछताछ / ऑर्डर अनुरोध</h3>
+          <p class="note">फॉर्म भेजने पर WhatsApp खुलेगा। आपका संदेश दुकान को भेजने से पहले आप उसे देख सकेंगे।</p>
+          <div class="form-row">
+            <div><label for="name">आपका नाम *</label><input id="name" required placeholder="अपना नाम लिखें"></div>
+            <div><label for="phone">मोबाइल नंबर</label><input id="phone" inputmode="tel" placeholder="आपका नंबर"></div>
+          </div>
+          <label for="product">किस सामान की जरूरत है? *</label>
+          <select id="product" required><option value="">सामान चुनें</option><option>मोरंग</option><option>बालू</option><option>सीमेंट</option><option>सरिया</option><option>अन्य / कई सामान</option></select>
+          <label for="quantity">मात्रा / विवरण</label><input id="quantity" placeholder="जैसे: 20 बोरी, 2 ट्रॉली, 1 क्विंटल">
+          <label for="message">आपका संदेश</label><textarea id="message" placeholder="ब्रांड, साइज, डिलीवरी या अन्य जानकारी लिखें"></textarea>
+          <button class="btn blue" type="submit" style="width:100%;margin-top:17px">WhatsApp पर पूछताछ भेजें ↗</button>
+          <p class="note">यह वेबसाइट अभी ऑनलाइन पेमेंट या ऑटोमैटिक स्टॉक/कीमत नहीं लेती। ऑर्डर की पुष्टि दुकान से होगी।</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> यादव इंटरप्राइजेज, जयरामपट्टी · सभी अधिकार सुरक्षित</footer>
+  <a class="float-wa" href="https://wa.me/919005586366?text=नमस्ते%2C%20मुझे%20निर्माण%20सामग्री%20की%20जानकारी%20चाहिए।" aria-label="WhatsApp पर संपर्क करें">☘ WhatsApp</a>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('[data-product]').forEach(link => link.addEventListener('click', () => {
+      document.getElementById('product').value = link.dataset.product;
+    }));
+    document.getElementById('enquiry').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const product = document.getElementById('product').value;
+      const quantity = document.getElementById('quantity').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const text = `नमस्ते यादव इंटरप्राइजेज,%0Aमेरा नाम: ${encodeURIComponent(name)}%0Aमोबाइल: ${encodeURIComponent(phone || 'नहीं दिया')}%0Aसामान: ${encodeURIComponent(product)}%0Aमात्रा/विवरण: ${encodeURIComponent(quantity || 'नहीं दिया')}%0Aसंदेश: ${encodeURIComponent(message || 'कोई अतिरिक्त संदेश नहीं')}`;
+      window.open('https://wa.me/919005586366?text=' + text, '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
